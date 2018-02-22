@@ -1,0 +1,16 @@
+body
+{
+	/* background-color: red; */
+}
+p
+{
+	color: blue;
+	font-size: 12pt;
+}
+img
+{
+	background: blue;
+	width: 160px;
+	height: 100px;
+	padding: 10px; 
+} 
