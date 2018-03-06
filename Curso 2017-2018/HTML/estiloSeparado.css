@@ -1,0 +1,19 @@
+/* Estilo para párrafos del documento */
+p
+{
+	font-family: Verdana;
+	font-size: x-small;
+	margin-left: 0.52in; /* Tamaño en pulgadas */
+	margin-right: 0.52in;
+}
+/* Estilo para encabezado nivel 1 */
+h1
+{
+	color: green;
+	font-size: 40pt;
+}
+h2, h3
+{
+	color: blue;
+	font-size: 16pt;
+}
