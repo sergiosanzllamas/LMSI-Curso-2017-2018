@@ -1,5 +1,5 @@
 alert("Javascript Off-line");
-function EscribeHola()
+function EscribeHola() 
 {
 	alert("ESTOY EN HOLA");
 }
