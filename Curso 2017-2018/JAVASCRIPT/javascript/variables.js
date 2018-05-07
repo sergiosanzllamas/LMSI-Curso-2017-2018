@@ -22,6 +22,13 @@ function CambiarTexto()
 	   "El precio es " + precio + "<br>" +
 	   "El doble del precio es " + (precio*2) + "<br>";
 
+    /* Cambiamos el tipo de datos de precio a booleano */
+    precio = false; /* Tipo de datos: Boolean */
+	miParrafo.innerHTML += 
+	   "Tipo de datos: Boolean" + "<br>" + 
+	   "El precio es " + precio + "<br>" +
+	   "El doble del precio es " + (precio*2) + "<br>";
+
 
 
 }
