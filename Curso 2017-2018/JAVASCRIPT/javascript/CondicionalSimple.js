@@ -7,12 +7,32 @@ function CalcularEtapa()
 	campoResultado = document.getElementById('Resultado');
 	campoEdad = document.getElementById('Edad');
 	valorEdad = campoEdad.value;
-	if (valorEdad >= 18)
-	{
-		campoResultado.innerHTML = "Eres mayor de edad";
-        campoEdad.value = 0;
-    }
-	else
-		campoResultado.innerHTML = "Eres menor de edad";
 
+	nuevo = document.target.value;
+
+
+
+
+	if ( (valorEdad >= 0) && (valorEdad<=12) ) 
+	{
+	  campoResultado.innerHTML = "Infancia";
+	}
+	else
+	{
+	  if ( (valorEdad >= 13) && (valorEdad<=16) ) 
+	  {
+	    campoResultado.innerHTML = "Adolescencia";
+	  }
+	  else 
+	  {
+	  	if ( (valorEdad >= 17) && (valorEdad<=22) ) 
+	    {
+	      campoResultado.innerHTML = "Juventud";
+	    }
+	    else
+	    {
+	      campoResultado.innerHTML = "Adulto";
+	    }
+	  }
+	}
 }
