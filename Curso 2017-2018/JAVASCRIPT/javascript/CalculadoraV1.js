@@ -2,8 +2,10 @@ function ObtenerOperando(idOperando)
 {
 	var miOperando;
 
+
+
 	miOperando = document.getElementById(idOperando);
-	if ( miOperando.value.length > 0 ) 
+	if ( length(miOperando.value) > 0 ) 
 	  return parseInt(miOperando.value);
 	else
 	  return 1000;

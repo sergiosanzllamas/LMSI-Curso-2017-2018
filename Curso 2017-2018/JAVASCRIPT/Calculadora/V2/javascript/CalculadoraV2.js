@@ -5,56 +5,27 @@ function ObtenerOperando(idOperando)
 	miOperando = document.getElementById(idOperando);
 	return parseInt(miOperando.value);
 }
-function Sumar() 
+function RealizaOperacion(tipoOperacion)
 {
-	var miResultado,
-	    valorOperando1,
-	    valorOperando2,
-	    valor;
+	// 1. Obtener valor primer  operando
+	// 2. Obtener valor segundo operando
+	// 3. Realizar la operación con lo operandos 
+	//    y según el valor de tipoOperacion 
+	// 4. Guardar el resultado
+	var valor1, valor2, valor;
 
-	miResultado = document.getElementById('Resultado');
-    valorOperando1 = ObtenerOperando('Operando1');
-    valorOperando2 = ObtenerOperando('Operando2');
-	valor = valorOperando1 + valorOperando2; 
-	miResultado.innerHTML = valor;
+	valor1 = ObtenerOperando('Operando1');
+	valor2 = ObtenerOperando('Operando2');
+	if (tipoOperacion == '+')
+		valor = valor1 + valor2;
+	else if (tipoOperacion == '-')
+		valor = valor1 - valor2;
+	else if (tipoOperacion == '*')
+		valor = valor1 * valor2;
+	else if (tipoOperacion == '/')
+		valor = valor1 / valor2;
+	else 
+		valor = 0;
+	document.getElementById('Resultado').innerHTML = valor;
 }
 
-function Restar() 
-{
-	var miResultado,
-	    valorOperando1,
-	    valorOperando2,
-	    valor;
-
-	miResultado = document.getElementById('Resultado');
-    valorOperando1 = ObtenerOperando('Operando1');
-    valorOperando2 = ObtenerOperando('Operando2');
-	valor = valorOperando1 - valorOperando2; 
-	miResultado.innerHTML = valor;
-}
-function Multiplicar() 
-{
-	var miResultado,
-	    valorOperando1,
-	    valorOperando2,
-	    valor;
-
-	miResultado = document.getElementById('Resultado');
-    valorOperando1 = ObtenerOperando('Operando1');
-    valorOperando2 = ObtenerOperando('Operando2');
-	valor = valorOperando1 * valorOperando2; 
-	miResultado.innerHTML = valor;
-}
-function Dividir() 
-{
-	var miResultado,
-	    valorOperando1,
-	    valorOperando2,
-	    valor;
-
-	miResultado = document.getElementById('Resultado');
-    valorOperando1 = ObtenerOperando('Operando1');
-    valorOperando2 = ObtenerOperando('Operando2');
-	valor = valorOperando1 / valorOperando2; 
-	miResultado.innerHTML = valor;
-}
