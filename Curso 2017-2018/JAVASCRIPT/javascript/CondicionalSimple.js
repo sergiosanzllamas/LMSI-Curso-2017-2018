@@ -9,10 +9,6 @@ function CalcularEtapa()
 	valorEdad = campoEdad.value;
 
 	nuevo = document.target.value;
-
-
-
-
 	if ( (valorEdad >= 0) && (valorEdad<=12) ) 
 	{
 	  campoResultado.innerHTML = "Infancia";
