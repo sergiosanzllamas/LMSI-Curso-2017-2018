@@ -34,11 +34,19 @@ class Contacto
 
 int main()
 {
+    long telefono;
 	Contacto c1;
 
 	c1 = new Contacto("Pepe",1111);
-	c1.Escribir();
+
+    c1.Escribir(); 
 	c1.CambiarTelefono(2222);
+
+    Contacto c1;
+
+    CrearContacto(&c1,"Pepito",1111);
+    EscribirContacto(c1);
+    CambiarTelefono(&c1,22222);
 }
 
 

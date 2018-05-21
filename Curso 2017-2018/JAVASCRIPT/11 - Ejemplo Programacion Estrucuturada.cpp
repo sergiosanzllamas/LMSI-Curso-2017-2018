@@ -23,9 +23,11 @@ void CambiarTelefono(Contacto *c,long nt)
 	c->telefono = nt;
 }
 
+Contacto c1;
+
 main()
 {
-	Contacto c1;
+	
 
 	CrearContacto(&c1,"Pepito",1111);
 	EscribirContacto(c1);
